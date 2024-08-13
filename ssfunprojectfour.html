@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Secret Fun</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Ramabhadra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="navcontainer">
+            <div class="site-nav">
+                <div class="site-nav__logo">
+                    <a href="home.html"><img src="images/AF Logo Black.png" alt="logo" width="150"></a>
+                </div>
+                <nav class="site-nav__navlinks">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ssfunprojectone.html">Super Secret Fun </a></li>
+                        <li><a href="#">Artchive</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <!-- Super Secret Fun Link Carousel -->
+    <section class="linkcarousel-container">
+        <div class="linkcarousel-container__text">
+            <ul>
+                <li><a href="ssfunprojectone.html">Project 1</a></li>
+                <li><a href="ssfunprojecttwo.html">Project 2</a></li>
+                <li><a href="ssfunprojectthree.html">Project 3</a></li>
+                <li><a href="ssfunprojectfour.html">Project 4</a></li>
+                <li><a href="ssfunprojectfive.html">Project 5</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Interactive Poly -->
+     <!-- This 3D interactive polygon allows us to spin it on a plane -->
+    <section class="container-interactive">
+        <div class="container-interactive__text">
+            <!-- here we place some text as an itro -->
+            <h4>Uh oh. Spongebob got turned into a polygon :C</h4>
+            <!-- with a little subheading -->
+            <p>Try spinning him (won't help but i'm sure he won't mind)!</p>
+        </div>
+        <!-- Then we have a container that is specific to the image itself -->
+        <div class="container-interactive__poly">
+            <!-- what's interesting here is that it utilizes a "data-path" and "data-count"-->
+             <!-- it allows us to define the path to the image, and the data count attribute -->
+              <!-- Essentially, it allows us to cycle through the image, and based on its positioning assign a specific image to that position -->
+               <!-- the {index} section will be updated based on the positioning as the viewer cycles through the 360degree object -->
+                <!-- the data count defines the total number of images in the 360 degree rotation -->
+            <div class="threesixty" data-path="threesixtyjs-master\assets\img\src\gem{index}.jpg" data-count="61">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footercontainer">
+            <div class="site-footer">
+                <div class="site-footer__hook">
+                    <h4>Want to chat about my qualifications?</h4>
+                </div>
+                <div class="site-footer__email">
+                    <a href="mailto:angusghfong@gmail.com">email me</a>
+                </div>
+                <div class="site-footer__socials__text">
+                    <h4> Find me here! </h4>
+                </div>
+                <nav class="site-footer__socials">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </nav>
+                <div class="site-footer__linkedin__text">
+                    <h4> And peep my LinkedIn! </h4>
+                </div>
+                <nav class="site-footer__linkedin">
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+     <!-- Here we are linking to the various scripts used on the page -->
+      <!-- such as Jquery (explained furtehr in ssfunprojectfive.html) -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="threesixtyjs-master/assets/js/jquery.threesixty.js"></script>
+    <!-- and an external javascript file for interaction-->
+    <script src="js/interactive.js"></script>
+</body>
+
+</html>

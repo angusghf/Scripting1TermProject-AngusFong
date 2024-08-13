@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angus's Portfolio</title>
+    <!-- This part links to the css stylesheet that houses all of the styling for the pages -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- These 3 links are taken from the Google Fonts website, allowing us to utilize external fonts and improve webpage performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Ramabhadra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Student Name: Angus Fong -->
+    <!-- Student ID: A01383071 -->
+    <!-- Class: Web Scripting 1, MDIA-2294 -->
+
+</head>
+
+<body>
+    <!-- This is the navigationa the top of the page -->
+    <!-- navbar -->
+    <header>
+        <div class="navcontainer">
+            <div class="site-nav">
+                <!-- This class allows us to place a logo inside, which we then link to the href="home.html", thus allowing us to jump back to the homepage by clicking on the logo -->
+                <div class="site-nav__logo">
+                    <a href="home.html"><img src="images/AF Logo Black.png" alt="logo" width="150"></a>
+                </div>
+                <!-- This class houses the navigation links that are situated within the nav bar -->
+                <nav class="site-nav__navlinks">
+                    <ul>
+                        <!-- links include the About, Super Secret Fun, Artchive, and Resume page -->
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ssfunprojectone.html">Super Secret Fun </a></li>
+                        <!-- These two pages are not linked, utilizing a # which represents a "dead link" -->
+                         <!-- Within this project, it serves a purpose of being more of a "proof of concept", instead of an actual functional button -->
+                        <li><a href="#">Artchive</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <!-- eyeball -->
+     <!-- This eyeball was taken from codepen. This is NOT a plugin. This only serves as a basis to what the end-site for my portfolio could look like. -->
+    <div class="spacersmall"></div>
+    <!-- This section  -->
+    <div class="container">
+        <!-- This part is the SVG graphics for the moving pupils -->
+        <svg class="container__eye bi bi-eye" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z">
+            </path>
+            <path class="container__eyeball" id="eyeball1"
+                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"></path>
+        </svg>
+        <svg class="container__eye bi bi-eye" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z">
+            </path>
+            <path class="container__eyeball" id="eyeball2"
+                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"></path>
+        </svg>
+    </div>
+    <!-- herotext and chevron -->
+     <!-- This section is a hero title and tagline for the page -->
+      <!-- it utilizes h1 and a chevrvon from the ionicon page, allowing us to streamline our design by utilizing an external library -->
+    <section class="herotitle">
+        <div class="herotitle-intro">
+            <h1>Deduce, Design, Deliver.</h1>
+        </div>
+        <div class="spacersmall"></div>
+        <ion-icon name="chevron-down"></ion-icon>
+    </section>
+    <!-- subsection text one -->
+    <section class="subsectionone">
+        <div class="subsectionone-text">
+            <!-- Same thing as the herotitle, this utilizes text in the form of h2. It also utilizes text decoration in the form of strikethrough! -->
+            <h2>I'm proactively engaging in <s>supporting</s> empowering ideas and problem solving through design.</h2>
+        </div>
+    </section>
+    <!-- project quadrant -->
+     <!-- This project quadrant section allows us to place 4 large width images and text that is styled in a grid manner -->
+    <section class="projectquadrant-section">
+        <div class="projectquadrant">
+            <div class="projectquadrant-one">
+                <!-- it also utilizes alt tags for accessibility. -->
+                <img src="images/projectquadrant-one__nujabes.gif" alt="projectquadrant-one__nujabes">
+                <h3>(sic.)kly missing</h3>
+                <p>Moved by melancholic tunes and chorus, Luv (sic.) pt3 by Shing02 and Nujabes was a song played on repeat. Paying homage to a piece that was so influential to Lo-Fi and my growth, (sic.)kly Missing is a visual representation of my love for the two artists who greatly inspired me.
+                </p>
+            </div>
+            <div class="projectquadrant-two">
+                <img src="images/projectquadrant-two__vinyl.gif" alt="projectquadrant-two__vinyl">
+                <h3>Vinyl Generation</h3>
+                <p>“A simulacrum is an image without resemblance.”, repurposed to exist as its own entity rather than a mere reproduction of the original (Gilles Deleuze). If such is the case, could the simulacrum co-exist with the authentic or would it present challenges?"
+                </p>
+            </div>
+            <div class="projectquadrant-three">
+                <img src="images/projectquadrant-three__getoutmore.gif" alt="projectquadrant-three__getoutmore">
+                <h3>Get Out More</h3>
+                <p>Get Out More is a PSA created to promote a healthier lifestyle as a result of the enclosed lifestyle we experience in the pandemic. Tasked as an assignment for a Film Production class at the University of British Columbia, the PSA is to convey a clear and concise message within the given timeframe of a minute and thirty seconds.
+                </p>
+            </div>
+            <div class="projectquadrant-four">
+                <img src="images/projectquadrant-four__xyz.gif" alt="projectquadrant-one__xyz">
+                <h3>He's X,Y, and Z</h3>
+                <p>Music played an integral part of growing up, and I wanted to create a work to honor the artists praised in my early adolescent years. Combining the practice of collage from my art history and visual arts courses with my digital medium preference, I presented a multifaceted work exploring the dynamic lives of individuals I tried to relate to, in order to understand my own.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- subsection text two -->
+    <section class="subsectiontwo">
+        <div class="subsectiontwo-text">
+            <h2>While also striving to <s>make</s> curate meaningful user experiences through empathy and understanding.
+            </h2>
+        </div>
+    </section>
+    <!-- image slider -->
+     <!-- Much like the eyeball, this was taken from W3C. This is also NOT a plugin. It also serves as a basis for me understanding how external codes are utilized, specifically ones that are from "raw code", and not plugins. -->
+    <div class="slideshow-container">
+        <!-- From this, we can observe that images are placed, given a style, and an alt tag for accessibility. -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/slideshow-image__one.gif" style="width:100%" alt="slideshow-image__one">
+            <!-- Classes are also made for the text which are styled in the CSS -->
+            <div class="text">Login Screen</div>
+        </div>
+        <!-- This styling and imagery placement occurs for the next 3 sections as well -->
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/slideshow-image__two.gif" style="width:100%" alt="slideshow-image__two">
+            <div class="text">Signup Screen and Homepage</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slideshow-image__three.gif" style="width:100%" alt="slideshow-image__three">
+            <div class="text">Community Page and Goal Setting Page</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <!-- These are the navigation dots for the slider -->
+    <div style="text-align:center">
+        <!-- each dot represents the positio of where the slider is  -->
+         <!-- Clicking on the dot allows us to jump to such position -->
+         <!-- Position 1 -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <!-- Position 2 -->
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <!-- And position 3 -->
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- subsection text three -->
+    <section class="subsectionthree">
+        <div class="subsectionthree-text">
+            <h2>But I’m also learning to create while creating to learn, constantly refining my soft skills!</h2>
+        </div>
+    </section>
+    <!-- artchive section -->
+    <section class="artchivesection">
+        <div class="artchivesection-one">
+            <img src="images/artchivesection-one__image.gif" alt="artchivesection-one__image">
+        </div>
+        <div class="artchivesection-two">
+            <img src="images/artchivesection-two__image.gif" alt="artchivesection-two__image">
+        </div>
+        <div class="artchivesection-three">
+            <img src="images/artchivesection-three__image.gif" alt="artchivesection-three__image">
+        </div>
+        <div class="artchivesection-four">
+            <img src="images/artchivesection-four__image.gif" alt="artchivesection-four__image">
+        </div>
+    </section>
+
+    <!-- footer -->
+     <!-- This section is for the footer. Similar to the nav bar, it houses multiple links. In this case, only dead links. -->
+    <footer>
+        <!-- I've also created classes for funny hooks, emails, and other methods of contact -->
+        <div class="footercontainer">
+            <div class="site-footer">
+                <div class="site-footer__hook">
+                    <h4>Want to chat about my qualifications?</h4>
+                </div>
+                <div class="site-footer__email">
+                    <a href="mailto:angusghfong@gmail.com">email me</a>
+                </div>
+                <div class="site-footer__socials__text">
+                    <h4> Find me here! </h4>
+                </div>
+                <nav class="site-footer__socials">
+                    <ul>
+                        <!-- Once again, # utilized for deadlinks and proof of concept -->
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </nav>
+                <div class="site-footer__linkedin__text">
+                    <h4> And peep my LinkedIn! </h4>
+                </div>
+                <nav class="site-footer__linkedin">
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Slider Script -->
+     
+    <script>
+        // This part allows us to start the slide on the index of 1, the first slide 
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        // This part allows us to change slides by increasing or decreasing the index, slideIndex, allowing us to move forward or back in the slide.
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        // a function dedicated to showing a specific slide based on the slideIndex created above. 
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        // This part, allows us to display the slides and to update the dots based on the location of our slides
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            // This section makes the looping effect. 
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            // Shows the current active slide and to mark the corresponding dot as active (dark circle)
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <!-- eyeball script -->
+     <!-- As mentioned above, this eyeball script is NOT a plugin, but serves as a proof of concept. -->
+    <script>
+        class Eyeball {
+            constructor($eyeball) {
+                this.$eyeball = $eyeball;
+                // This event listener "listens" to the mouse movement and updates it correspondingly 
+                window.addEventListener("mousemove", (ev) => {
+                    const { clientX, clientY } = ev;
+                    this.setTransform(clientX, clientY);
+                });
+            }
+            // This section does 2 things...
+            setTransform(clientX, clientY) {
+                // Calculate the angle and position of where the mouse is 
+                const { $eyeball } = this;
+                const { x, y, width, height } = $eyeball.getBoundingClientRect();
+                const centerX = x + width / 2;
+                const centerY = y + height / 2;
+                const [x1, x2, y1, y2] = [centerX, clientX, centerY, clientY];
+                const angle = (Math.atan2(y2 - y1, x2 - x1) * 180) / Math.PI;
+                // and updates the transformation based on such location
+                $eyeball.style.transform = `rotate(${angle}deg) translateX(2px)`;
+            }
+        }
+        class Main {
+            static init() {
+                // Initializing eyeball
+                const $eyeball1 = document.getElementById("eyeball1");
+                const $eyeball2 = document.getElementById("eyeball2");
+                new Eyeball($eyeball1);
+                new Eyeball($eyeball2);
+            }
+        }
+        Main.init();
+
+    </script>
+    <!-- Ionicons script -->
+     <!-- Ionicons allow us to utilize a library of icons, streamlining the process in designing websites -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

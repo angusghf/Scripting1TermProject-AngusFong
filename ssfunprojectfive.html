@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Secret Fun</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Ramabhadra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" />
+
+
+
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="navcontainer">
+            <div class="site-nav">
+                <div class="site-nav__logo">
+                    <a href="home.html"><img src="images/AF Logo Black.png" alt="logo" width="150"></a>
+                </div>
+                <nav class="site-nav__navlinks">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ssfunprojectone.html">Super Secret Fun </a></li>
+                        <li><a href="#">Artchive</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <!-- Super Secret Fun Link Carousel -->
+     <!-- This is a "link carousel" (atleast that's what I call it). It houses the links to the various projects that utilize plugins featured in the assignment page. -->
+      <!-- we first create a class to house everything -->
+    <section class="linkcarousel-container">
+        <!-- Such as another class that houses the text -->
+        <div class="linkcarousel-container__text">
+            <ul>
+                <!-- These are the links to the various projects, completed through Href. -->
+                <li><a href="ssfunprojectone.html">Project 1</a></li>
+                <li><a href="ssfunprojecttwo.html">Project 2</a></li>
+                <li><a href="ssfunprojectthree.html">Project 3</a></li>
+                <li><a href="ssfunprojectfour.html">Project 4</a></li>
+                <li><a href="ssfunprojectfive.html">Project 5</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Lightbox Plugin-->
+     <!-- here we create a section to house everything -->
+    <section class="lightbox-gallery">
+        <!-- such as text -->
+        <div class="lightbox-gallery__text">
+            <h4>Top 6 Hand Gestures</h4>
+            <p>And how to use them.</p>
+        </div>
+        <!-- and iamges -->
+        <div class="lightbox-gallery__images">
+            <!-- we utilize href to place oru images -->
+             <!-- the data-lightbox attribute makes it so that the image is correlated with the specific lightbox gallery number  -->
+              <!-- data-title provides the caption information -->
+            <a href="images/lightbox-gallery__handgrab.gif" data-lightbox="image-1"
+                data-title="Suggested Use: When Using The 'Force' on Someone or Something">
+                <img src="images/lightbox-gallery__handgrab.gif" alt="lightbox-gallery__handgrab" />
+            </a>
+            <a href="images/lightbox-gallery__handpalmup.gif" data-lightbox="image-1"
+                data-title="Suggested Use: When Giving Someone a 'Downlow, too slow'">
+                <img src="images/lightbox-gallery__handpalmup.gif" alt="lightbox-gallery__handpalmup" />
+            </a>
+            <a href="images/lightbox-gallery__handpalmdown.gif" data-lightbox="image-1"
+                data-title="Suggested Use: When Receiving a Wedding Ring">
+                <img src="images/lightbox-gallery__handpalmdown.gif" alt="lightbox-gallery__handpalmdown" />
+            </a>
+            <a href="images/lightbox-gallery__handgrabup.gif" data-lightbox="image-1"
+                data-title="Suggested Use: When Giving a Wedding Ring">
+                <img src="images/lightbox-gallery__handgrabup.gif" alt="lightbox-gallery__handgrabup" />
+            </a>
+            <a href="images/lightbox-gallery__handthumbsup.gif" data-lightbox="image-1"
+                data-title="Suggested Use: When Someone Gives You Right of Way">
+                <img src="images/lightbox-gallery__handthumbsup.gif" alt="lightbox-gallery__handthumbsup" />
+            </a>
+            <a href="images/lightbox-gallery__handpointright.gif" data-lightbox="image-1"
+                data-title="Suggested Use: When Pairing With the Phrase 'Beat it Pal'">
+                <img src="images/lightbox-gallery__handpointright.gif" alt="lightbox-gallery__handpointright" />
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footercontainer">
+            <div class="site-footer">
+                <div class="site-footer__hook">
+                    <h4>Want to chat about my qualifications?</h4>
+                </div>
+                <div class="site-footer__email">
+                    <a href="mailto:angusghfong@gmail.com">email me</a>
+                </div>
+                <div class="site-footer__socials__text">
+                    <h4> Find me here! </h4>
+                </div>
+                <nav class="site-footer__socials">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </nav>
+                <div class="site-footer__linkedin__text">
+                    <h4> And peep my LinkedIn! </h4>
+                </div>
+                <nav class="site-footer__linkedin">
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+     <!-- This is linked to JQuery -->
+      <!-- more specifically, it's linked to the one provided by the "lightbox2" plugin -->
+       <!-- JQuery allows us to "write less, and do more" (according to W3C) -->
+        <!-- It's fundamentally a way for developers to access a Javascript library for things that include interaction, animation, or perhaps even validation -->
+         <!-- it's an open source software, too! -->
+    <script src="lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="lightbox2-2.11.4/dist/js/lightbox.js"></script>
+
+</body>
+
+</html>
