@@ -1,3 +1,4 @@
+/* Most of the code here is written in BEM (Blocks, elements, modifiers) style...atleast to the best of my abilities  */
 /* Here we have root, which allows us to use var(--XYZ), in various css styles, so we don't have to write more than we need to. */
 /* For instance, var(--brand-red), allows us to utilize our defined red color, instead of going manually typing the hex code every time we want that specific color. */
 :root {
@@ -13,6 +14,7 @@
 /* text */
 /* here we define the text styling for h1-h4, and p tags */
 /* we define the sizing, margin, weight, font, etc. */
+/* note the usage of Var */
 h1 {
   font-family: var(--font-roboto-mono);
   margin-bottom: 0.5em;
@@ -624,6 +626,9 @@ img {
 .parallax{
   margin-bottom: 12rem;
 }
+/* setting the width to 100vmax */
+/* "vmax represents the viewport-percentage length unit based on the browser's default viewport size", according to Google */
+/* essentially, its a css unit for responsive design! */
 .img-parallax {
   width: 100vmax;
   z-index: -1;

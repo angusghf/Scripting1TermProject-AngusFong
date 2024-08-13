@@ -37,22 +37,26 @@ $(document).ready(function () {
                     // and dots for navigation
                     dots: true
 
-                    // most of these values are also present in these other breakpoints, but at different values to, once again, make it resposive to the specified size
+                    // most of these values are also present in these other breakpoints, but at different values to, once again, make it resposive to the specified size (768px and 480px)
                 }
             },
             {
-            // one for 768
+            // one for 768px breakpoint
                 breakpoint: 768,
                 settings: {
+                    // number of slides to show
                     slidesToShow: 2,
+                    // number of slides it takes to scroll
                     slidesToScroll: 1
                 }
             },
             {
-                // and 480
+                // and a 480px breakpoint
                 breakpoint: 480,
                 settings: {
+                    // number of slides to show
                     slidesToShow: 1,
+                    // number of slides it takes to scroll
                     slidesToScroll: 1
                 }
             }
